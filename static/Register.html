@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+	</head>
+	<body>
+		&nbsp;&nbsp;
+		<p1>用户注册</p1>
+		<form id="form" action="from.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend>用户</legend>
+				<input id="hiddenfiled"  name="hiddenfield" type="hidden" vilue="hiddenfield"/>
+				
+				<label for="username">用户:</label>
+				<input type="text" id="username" name="username" value="" size="15" maxlength="25"/>
+				<br/>
+				<label for="pass">密码:</label>
+				<input type="password" id="pass" name="pass" size="15" maxlength="25" />
+			</fieldset>
+			
+			<fieldset>
+				<legend>性别</legend>
+				<label for="sex">男</label>
+				<input type="radio" value="1" id="sex" name="sex" />
+				<label for="sex">女</label>
+				<input type="radio" value="1" id="sex" name="sex" />
+				<label for="sex">保密</label>
+				<input type="radio" value="1" id="sex" name="sex" />
+			</fieldset>
+			
+			<fieldset>
+				<legend>用户类型</legend>
+				<label for="usertype">请选择用户类型:</label>
+				<select id="usertype" name="username">
+					<option>请选择</option>
+					<option>学生</option>
+					<option>教师</option>
+					<option>公司职员</option>
+					<option>企业家</option>
+					<option>其它</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>邮箱</legend>
+				<label for="E-mail">E-mail:</label>
+				<input type="email" id="E-mail" name="E-mail" />
+			</fieldset>
+			
+			<fieldset>
+				<legend>爱好</legend>
+				<label for="fav">读书</label>
+				<input type="checkbox" value="1" id="fav" name="fav" />
+				<label for="fav">旅游</label>
+				<input type="checkbox" value="1" id="fav" name="fav" />
+				<label for="fav">购物</label>
+				<input type="checkbox" value="1" id="fav" name="fav" />
+				<label for="fav">游戏</label>
+				<input type="checkbox" value="1" id="fav" name="fav" />
+			</fieldset>
+			
+			<fieldset>
+				<legend>头像</legend>
+				<img src="./img/touxiang.png" wide="200" height="200" alt="用户头像" title"用户头像" border="0" usemap="#map">
+				<br />
+				<label for="myimage">照片上传</label>
+				&nbsp;&nbsp;
+				<input type="file" id="myimage" name="myimage" size="35" maxlength="255"/>
+				<!--<map name="map" id="myimage">
+					
+				</map>-->
+			</fieldset>
+			
+			<fieldset>
+				<legend>个人简介</legend>
+				<label for="profild"请输入您的个人简介:</label>
+				<br />
+				<textarea col="80" rows="10" id="profild"></textarea>
+			</fieldset>	
+			
+	<!--		<fieldset>-->
+	<!--			<legend>注册</legend>-->
+				<br />
+				<input type="submit" value="确认注册" id="submit" name="submit" />
+				<input type="reset" value="重置" id="reset" name="reset" />
+<!--			</fieldset>-->
+		<form>
+	</body>
+</html>
